@@ -2,6 +2,7 @@ const add = document.getElementById('add-button');
 const list = document.getElementById('list');
 const awesomBook = [];
 
+
 add.addEventListener('click', ()=>{
     const title = document.getElementById('title');
     const author = document.getElementById('author');
@@ -24,10 +25,20 @@ add.addEventListener('click', ()=>{
         Title: title.value, 
         Author: author.value
     }
+
+   
+  
+
     awesomBook.push(book); 
+
+    localStorage.setItem("awesomBook",JSON.stringify(awesomBook))
     title.value=''
     author.value = ''
 });
+
+
+
+
 
 
 list.addEventListener('click', e =>{
@@ -37,7 +48,11 @@ list.addEventListener('click', e =>{
         e.target.parentElement.remove();
         const newAwesemBook = awesomBook.filter(function(ele){
             return ele.Title !== e.target.parentElement.children[0].innerText && (ele.Author !== e.target.parentElement.children[0].innerText);
-        })
+                 })
         console.log(newAwesemBook);
+        localStorage.setItem("awesomBook",JSON.stringify(newAwesemBook))
+        
     }
+    
+    
 })

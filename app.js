@@ -37,7 +37,9 @@ list.addEventListener('click', (e) => {
 
   if (e.target.classList.contains('remove')) {
     e.target.parentElement.remove();
-  const newAwesemBook = awesomBook.filter((ele) => ele.Title !== e.target.parentElement.children[0].innerText);
+    const newAwesemBook = awesomBook.filter(
+      (ele) => ele.Title !== e.target.parentElement.children[0].innerText
+    );
 
     localStorage.setItem('awesomBook', JSON.stringify(newAwesemBook));
   }

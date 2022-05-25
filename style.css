@@ -1,3 +1,68 @@
-div {
-  background-color: white;
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+li {
+  list-style: none;
+}
+
+.onebook {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 1fr 1fr 1fr 30fr;
+  gap: 0.625rem;
+  border: 1px solid black;
+}
+
+.remove {
+  width: 6.25rem;
+  justify-self: flex-end;
+  border-color: black;
+  box-shadow: 2px 4px black;
+  margin-right: 0.625rem;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 0.625rem;
+}
+
+.removebg {
+  background-color: rgb(243, 240, 240);
+}
+
+hr {
+  width: 6.25rem;
+  border-top: 1px solid black;
+}
+
+#add-button {
+  margin-left: 12%;
+  box-shadow: 2px 4px black;
+}
+
+#title {
+  border: 0.125rem solid black;
+  width: 12.5rem;
+  height: 1.125rem;
+}
+
+#author {
+  border: 0.125rem solid black;
+  width: 12.5rem;
+  height: 1.125rem;
+}
+
+.title-pe {
+  margin-left: 13px;
 }

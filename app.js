@@ -16,16 +16,25 @@ function createBook(){
   const liTitle = document.createElement('li');
   const liAuthor = document.createElement('li');
   const removeBotton = document.createElement('button');
+  const by = document.createElement('p')
   const newDiv = document.createElement('div');
+  const count = [1,2,3,4,5,6,7,8];
 
   //liTitle.classList = title.value;
+  newDiv.classList.add('onebook');
+  for(let i = 0;i<count.length; i += 1){
+    if(count[i]%2==0){newDiv.classList.add('removebg')}
+    else{
+      newDiv.classList.add('removebg2')
+    }
+  }
+  
+  by.innerHTML = 'by'
   removeBotton.classList = 'remove';
   liTitle.appendChild(document.createTextNode(this.title.value));
   liAuthor.appendChild(document.createTextNode(this.author.value));
   removeBotton.innerText = 'Remove';
-  newDiv.appendChild(liTitle);
-  newDiv.appendChild(liAuthor);
-  newDiv.appendChild(removeBotton);
+  newDiv.append(liTitle,by,liAuthor,removeBotton);
   list.appendChild(newDiv);
 }
   add.addEventListener('click', () => {

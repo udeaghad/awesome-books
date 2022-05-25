@@ -118,5 +118,13 @@ a:hover {
 .copy-right {
   border: .125rem solid black;
   padding-left: .9375rem;
-  font-size: 1.25rem;
+  font-size: 1.25rem;  
+  position: absolute;
+  width: 100%;
+  margin-top: 23%;
+}
+
+.all,
+.contact {
+  display: none;
 }

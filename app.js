@@ -59,3 +59,36 @@ const timeNow = new Date();
 const now = document.querySelector('.time');
 now.innerText = timeNow;
 
+
+const listLink = document.querySelector(".list-link");
+const addLink = document.querySelector(".add-link");
+const contactLink = document.querySelector(".contact-link");
+
+const allSection = document.querySelector(".all");
+const inputSection = document.querySelector(".input-form");
+const contactSection = document.querySelector(".contact");
+const copyRight = document.querySelector(".copy-right");
+listLink.addEventListener("click", e => {
+  e.preventDefault();
+  allSection.style.display = "flex"
+  inputSection.style.display = "none"
+  contactSection.style.display = "none"
+  copyRight.style.marginTop = "5%";
+  
+})
+addLink.addEventListener("click", e => {
+  e.preventDefault();
+  allSection.style.display = "none"
+  inputSection.style.display = "flex"
+  contactSection.style.display = "none"
+  copyRight.style.marginTop = "23%"
+})
+
+contactLink.addEventListener("click", e => {
+  e.preventDefault();
+  allSection.style.display = "none"
+  inputSection.style.display = "none"
+  contactSection.style.display = "flex"
+  copyRight.style.marginTop = "19%"
+})
+

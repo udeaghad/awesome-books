@@ -8,10 +8,6 @@
   width: 50%;
 }
 
-li {
-  list-style: none;
-}
-
 .onebook {
   display: grid;
   align-items: baseline;
@@ -65,4 +61,72 @@ hr {
 
 .title-pe {
   margin-left: 13px;
+  list-style: none;
+}
+
+.time {
+  color: black;
+  text-align: right;
+  margin-top: 3.625rem;
+  width: 98%;
+  background-color: white;
+  top: 3.125rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  width: 98%;
+  border: 2px solid black;
+  background-color: white;
+  top: 0;
+}
+
+.list-item {
+  display: flex;
+  gap: 0.625rem;
+  padding-right: 1.25rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+  font-size: 1rem;
+}
+
+a:hover {
+  color: blue;
+}
+
+.logo {
+  padding-left: 1.25rem;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy-right {
+  border: 0.125rem solid black;
+  padding-left: 0.9375rem;
+  font-size: 1.25rem;
+  position: absolute;
+  width: 100%;
+  margin-top: 23%;
+}
+
+.all,
+.contact {
+  display: none;
+}
+
+.links-add {
+  color: blue;
 }

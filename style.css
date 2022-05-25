@@ -8,10 +8,6 @@
   width: 50%;
 }
 
-li {
-  list-style: none;
-}
-
 .onebook {
   display: grid;
   align-items: baseline;
@@ -65,6 +61,7 @@ hr {
 
 .title-pe {
   margin-left: 13px;
+  list-style: none;
 }
 
 .time {
@@ -91,6 +88,7 @@ nav {
   display: flex;
   gap: .625rem;
   padding-right: 1.25rem;
+  list-style: none;
 }
 
 a {
@@ -127,4 +125,8 @@ a:hover {
 .all,
 .contact {
   display: none;
+}
+
+.links-add {
+  color: blue;
 }

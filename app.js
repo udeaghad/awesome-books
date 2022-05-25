@@ -24,6 +24,7 @@ function createBook() {
   by.innerHTML = 'by';
   removeBotton.classList = 'remove';
   liTitle.className = 'title-pe';
+  liAuthor.className = 'title-pe';
   liTitle.appendChild(document.createTextNode(this.title.value));
   liAuthor.appendChild(document.createTextNode(this.author.value));
   removeBotton.innerText = 'Remove';
@@ -55,10 +56,23 @@ list.addEventListener('click', (e) => {
     localStorage.setItem('awesomBook', JSON.stringify(awesomBook));
   }
 });
-const timeNow = new Date();
-const now = document.querySelector('.time');
-now.innerText = timeNow;
 
+const displayDate = () => {
+  const date = new Date();
+  const options = {
+    weekday: undefined,
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+  const [month, time] = [
+    date.toLocaleDateString(undefined, options),
+    date.toLocaleTimeString().toLocaleLowerCase(),
+  ];
+  document.querySelector('.time').innerHTML = `${month}, ${time}`;
+};
+displayDate();
+setInterval(displayDate, 1000);
 
 const listLink = document.querySelector(".list-link");
 const addLink = document.querySelector(".add-link");
@@ -68,13 +82,19 @@ const allSection = document.querySelector(".all");
 const inputSection = document.querySelector(".input-form");
 const contactSection = document.querySelector(".contact");
 const copyRight = document.querySelector(".copy-right");
+const linksAll = document.querySelector(".links-all");
+const linksAdd = document.querySelector(".links-add");
+const linksContact = document.querySelector(".links-contact");
+
 listLink.addEventListener("click", e => {
   e.preventDefault();
   allSection.style.display = "flex"
   inputSection.style.display = "none"
   contactSection.style.display = "none"
   copyRight.style.marginTop = "5%";
-  
+  linksAll.style.color='blue';
+  linksAdd.style.color='black'
+  linksContact.style.color='black'
 })
 addLink.addEventListener("click", e => {
   e.preventDefault();
@@ -82,6 +102,9 @@ addLink.addEventListener("click", e => {
   inputSection.style.display = "flex"
   contactSection.style.display = "none"
   copyRight.style.marginTop = "23%"
+  linksAdd.style.color='blue';
+  linksAll.style.color='black';
+  linksContact.style.color='black';
 })
 
 contactLink.addEventListener("click", e => {
@@ -90,5 +113,8 @@ contactLink.addEventListener("click", e => {
   inputSection.style.display = "none"
   contactSection.style.display = "flex"
   copyRight.style.marginTop = "19%"
+  linksContact.style.color='blue'
+  linksAdd.style.color='black'
+  linksAll.style.color='black';
 })
 

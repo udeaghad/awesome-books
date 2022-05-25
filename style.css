@@ -6,9 +6,6 @@
   margin-left: 25%;
   margin-top: 5%;
   width: 50%;
-  border: 4px solid black;
-}
-#list {
  
 }
 
@@ -20,7 +17,8 @@ li {
   display: grid;
   align-items: baseline;
   grid-template-columns: 1fr 1fr 1fr 30fr;
-  gap: 1.25rem;
+  gap: .625rem;
+  border: 1px solid black;
 }
 
 .remove {
@@ -28,6 +26,8 @@ li {
   justify-self: flex-end;
   border-color: black;
   box-sizing: .125rem;
+  box-shadow:  2px 4px black;
+  margin-right: .625rem;
 }
 
 .input-form {
@@ -36,11 +36,34 @@ li {
   justify-content: center;
   align-items: center;
   margin-top: 1.25rem;
+  gap: .625rem;
 }
 
 .removebg {
-  background-color: gray;
+  background-color: rgb(243, 240, 240);
 }
-.removebg2 {
-  background-color: white;
+hr {
+  width: 6.25rem;
+  border-top: 1px solid black;
+}
+
+#add-button {
+  margin-left: 12%;
+  box-shadow:  2px 4px black;
+}
+
+#title {
+  border: .125rem solid black;
+  width: 12.5rem;
+  height: 1.125rem;
+}
+
+#author {
+  border: .125rem solid black;
+  width: 12.5rem;
+  height: 1.125rem;
+}
+
+.title-p {
+  margin-left: 13px;
 }

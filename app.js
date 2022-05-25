@@ -19,12 +19,13 @@ function createBook(){
   const newDiv = document.createElement('div');
  
   newDiv.classList.add('onebook');
-  for(let i = 1;i<awesomBook.length; i += 1){  
+  for(let i = 0;i<awesomBook.length; i += 1){  
     newDiv.classList.toggle('removebg')
   }
   
   by.innerHTML = 'by'
   removeBotton.classList = 'remove';
+  liTitle.className = 'title-p'
   liTitle.appendChild(document.createTextNode(this.title.value));
   liAuthor.appendChild(document.createTextNode(this.author.value));
   removeBotton.innerText = 'Remove';

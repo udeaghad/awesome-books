@@ -31,6 +31,8 @@ function createBook() {
   list.appendChild(newDiv);
 }
 add.addEventListener('click', () => {
+  const title = document.getElementById('title');
+  const author = document.getElementById('author');
   const book = new Info(title.value, author.value);
   awesomBook.push(book);
   createBook(book);
@@ -46,11 +48,10 @@ list.addEventListener('click', (e) => {
   if (e.target.classList.contains('remove')) {
     e.target.parentElement.remove();
     const newAwesemBook = awesomBook.filter(
-      (ele) => ele.Title !== e.target.parentElement.children[0].innerText
+      (ele) => ele.Title !== e.target.parentElement.children[0].innerText,
     );
 
     awesomBook.splice(awesomBook.indexOf(newAwesemBook), 1);
     localStorage.setItem('awesomBook', JSON.stringify(awesomBook));
-    console.log(awesomBook);
   }
 });

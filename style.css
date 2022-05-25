@@ -24,7 +24,6 @@ li {
   width: 6.25rem;
   justify-self: flex-end;
   border-color: black;
-  box-sizing: 0.125rem;
   box-shadow: 2px 4px black;
   margin-right: 0.625rem;
 }
@@ -41,6 +40,7 @@ li {
 .removebg {
   background-color: rgb(243, 240, 240);
 }
+
 hr {
   width: 6.25rem;
   border-top: 1px solid black;

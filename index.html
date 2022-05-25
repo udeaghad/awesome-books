@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <section class="all"><h1>Awsome Book</h1><hr>
-        <div id="list">
-           
-        </div>
+  </head>
+  <body>
+      <nav>
+         <div class="logo"><a href="">Awesome Books</a></div>
+         <ul class="list-item">
+             <li><a href="">List</a></li>
+             <li><a href="">Add new</a></li>
+             <li><a href="">Contact</a></li>
+         </ul> 
+      </nav>
+      <p class="time"></p>
+    <section class="all">
+      <h1>Awsome Book</h1>
+      <hr />
+      <div id="list"></div>
     </section>
-    
-        <section class="input-form">
-        <h2>Add book</h2>
-        <input type="text" id="title" placeholder="Text">
-        <input type="text" id="author" placeholder="Author">
-        <button type="submit" id="add-button">Add</button></section>
-        
 
-       <script src="app.js"></script>
-    
-</body>
+    <section class="input-form">
+      <h2>Add a new book</h2>
+      <input type="text" id="title" placeholder="Text" />
+      <input type="text" id="author" placeholder="Author" />
+      <button type="submit" id="add-button">Add</button>
+    </section>
+    <section class="contact">
+        <h2>Contact information</h2>
+        <p>Do you have any question or you want to say "Hello"<br>you can reach out to us!</p>
+        <ul><li>Our email: mail@mail.com</li>
+            <li>Our phone number: +2519743748793</li>
+            <li>Our adress: Algeria st. 22,840645 Addis, Nigeria</li>
+        </ul>
+    </section>
+   <footer>
+       <p class="copy-right">copyright   ...</p>
+   </footer>
+    <script src="app.js"></script>
+  </body>
 </html>

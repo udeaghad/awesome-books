@@ -66,3 +66,57 @@ hr {
 .title-pe {
   margin-left: 13px;
 }
+
+.time {
+  color: black;
+  text-align: right;
+  margin-top: 3.625rem;
+  width: 98%;
+  background-color: white;
+  top: 3.125rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  width: 98%;
+  border: 2px solid black;
+  background-color: white;
+  top: 0;
+}
+
+.list-item {
+  display: flex;
+  gap: .625rem;
+  padding-right: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: blue;
+}
+
+.logo {
+  padding-left: 1.25rem;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy-right {
+  border: .125rem solid black;
+  padding-left: .9375rem;
+  font-size: 1.25rem;
+}

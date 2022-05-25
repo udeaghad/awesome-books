@@ -55,3 +55,7 @@ list.addEventListener('click', (e) => {
     localStorage.setItem('awesomBook', JSON.stringify(awesomBook));
   }
 });
+const timeNow = new Date();
+const now = document.querySelector('.time');
+now.innerText = timeNow;
+

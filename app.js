@@ -49,7 +49,7 @@ list.addEventListener('click', (e) => {
   if (e.target.classList.contains('remove')) {
     e.target.parentElement.remove();
     const newAwesemBook = awesomBook.filter(
-      (ele) => ele.Title !== e.target.parentElement.children[0].innerText,
+      (ele) => ele.Title !== e.target.parentElement.children[0].innerText
     );
 
     awesomBook.splice(awesomBook.indexOf(newAwesemBook), 1);
@@ -74,47 +74,46 @@ const displayDate = () => {
 displayDate();
 setInterval(displayDate, 1000);
 
-const listLink = document.querySelector(".list-link");
-const addLink = document.querySelector(".add-link");
-const contactLink = document.querySelector(".contact-link");
+const listLink = document.querySelector('.list-link');
+const addLink = document.querySelector('.add-link');
+const contactLink = document.querySelector('.contact-link');
 
-const allSection = document.querySelector(".all");
-const inputSection = document.querySelector(".input-form");
-const contactSection = document.querySelector(".contact");
-const copyRight = document.querySelector(".copy-right");
-const linksAll = document.querySelector(".links-all");
-const linksAdd = document.querySelector(".links-add");
-const linksContact = document.querySelector(".links-contact");
+const allSection = document.querySelector('.all');
+const inputSection = document.querySelector('.input-form');
+const contactSection = document.querySelector('.contact');
+const copyRight = document.querySelector('.copy-right');
+const linksAll = document.querySelector('.links-all');
+const linksAdd = document.querySelector('.links-add');
+const linksContact = document.querySelector('.links-contact');
 
-listLink.addEventListener("click", e => {
+listLink.addEventListener('click', (e) => {
   e.preventDefault();
-  allSection.style.display = "flex"
-  inputSection.style.display = "none"
-  contactSection.style.display = "none"
-  copyRight.style.marginTop = "5%";
-  linksAll.style.color='blue';
-  linksAdd.style.color='black'
-  linksContact.style.color='black'
-})
-addLink.addEventListener("click", e => {
+  allSection.style.display = 'flex';
+  inputSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  copyRight.style.marginTop = '5%';
+  linksAll.style.color = 'blue';
+  linksAdd.style.color = 'black';
+  linksContact.style.color = 'black';
+});
+addLink.addEventListener('click', (e) => {
   e.preventDefault();
-  allSection.style.display = "none"
-  inputSection.style.display = "flex"
-  contactSection.style.display = "none"
-  copyRight.style.marginTop = "23%"
-  linksAdd.style.color='blue';
-  linksAll.style.color='black';
-  linksContact.style.color='black';
-})
+  allSection.style.display = 'none';
+  inputSection.style.display = 'flex';
+  contactSection.style.display = 'none';
+  copyRight.style.marginTop = '23%';
+  linksAdd.style.color = 'blue';
+  linksAll.style.color = 'black';
+  linksContact.style.color = 'black';
+});
 
-contactLink.addEventListener("click", e => {
+contactLink.addEventListener('click', (e) => {
   e.preventDefault();
-  allSection.style.display = "none"
-  inputSection.style.display = "none"
-  contactSection.style.display = "flex"
-  copyRight.style.marginTop = "19%"
-  linksContact.style.color='blue'
-  linksAdd.style.color='black'
-  linksAll.style.color='black';
-})
-
+  allSection.style.display = 'none';
+  inputSection.style.display = 'none';
+  contactSection.style.display = 'flex';
+  copyRight.style.marginTop = '19%';
+  linksContact.style.color = 'blue';
+  linksAdd.style.color = 'black';
+  linksAll.style.color = 'black';
+});

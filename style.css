@@ -86,14 +86,14 @@ nav {
 
 .list-item {
   display: flex;
-  gap: .625rem;
+  gap: 0.625rem;
   padding-right: 1.25rem;
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(4, 4, 4);
   font-size: 1rem;
 }
 
@@ -114,9 +114,9 @@ a:hover {
 }
 
 .copy-right {
-  border: .125rem solid black;
-  padding-left: .9375rem;
-  font-size: 1.25rem;  
+  border: 0.125rem solid black;
+  padding-left: 0.9375rem;
+  font-size: 1.25rem;
   position: absolute;
   width: 100%;
   margin-top: 23%;

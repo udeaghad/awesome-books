@@ -13,8 +13,23 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://yohannesdagnachew.github.io/Awsome-Book/)
 
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+
+Prerequisites: 
+   - Signup/login to your github account and go to https://github.com/yohannesdagnachew/Awsome-Book/.
+   
+Setup
+   - Clone the repository on github to your local terminal
+Install
+   - Ensure you have git installed on your terminal
+  
+Usage
+   - Open the index.html file with your browser to view the webpage
 
 ## Authors
 
